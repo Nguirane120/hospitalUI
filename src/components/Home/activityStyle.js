@@ -14,5 +14,9 @@ export const activityStyle = StyleSheet.create({
     domaine:{
         marginTop: 5,
         fontSize: 15,
+    },
+    image:{
+        width: 70,
+        height: 70
     }
 })

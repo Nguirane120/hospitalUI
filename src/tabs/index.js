@@ -15,7 +15,7 @@ export default function BotomTabs() {
       initialRouteName="Home"
       activeColor="#e91e63"
       inactiveColor="#3e2465"
-      barStyle={{ backgroundColor: "tomato" }}
+      barStyle={{ backgroundColor: "blue" }}
     >
       <Tab.Screen
         name="Feed"

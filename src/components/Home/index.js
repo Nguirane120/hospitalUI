@@ -4,6 +4,8 @@ import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import { dashboardStyele } from './dashboardStyle';
 import { fakeData } from '../../../fakeData';
 import ActivityList from './ActivityList';
+import { fakeSymptome } from '../../../fakeSymptome';
+import Symptomes from '../Symptome';
 
 
 export default function Home() {
@@ -32,6 +34,31 @@ export default function Home() {
       )
     }}
     />
+
+    {/* FIN LIST DES ACTIVITES */}
+
+    <View style={dashboardStyele.symptomeTitie}>
+      <Text>List des symptomes</Text>
+    </View>
+
+
+    <FlatList horizontal={true}
+    data={fakeSymptome}
+    keyExtractor={item => item.id}
+    showsHorizontalScrollIndicator={false}
+    renderItem={({item}) =>{
+      return(
+        <Symptomes symptome={item}/>
+      )
+    }}
+    />
+
+    {/* FIN LIST DES SYMPTOMES */}
+
+    <View style={dashboardStyele.doctors}>
+      <Text style={dashboardStyele.doctorTitle}>Nos doctuers</Text>
+      <Text>afficher tout </Text>
+    </View>
 
     </ScrollView>
   )

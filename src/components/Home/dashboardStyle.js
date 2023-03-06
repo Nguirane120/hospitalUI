@@ -24,5 +24,18 @@ export const dashboardStyele = StyleSheet.create({
     scrollableList:{
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical
+    },
+    symptomeTitie:{
+        paddingHorizontal: 15,
+        paddingVertical: 15
+    },
+    doctors:{
+        paddingHorizontal: 15,
+        paddingVertical: 15,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    doctorTitle:{
+        fontWeight: 'bold'
     }
 })
