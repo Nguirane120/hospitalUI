@@ -6,6 +6,7 @@ import { fakeData } from '../../../fakeData';
 import ActivityList from './ActivityList';
 import { fakeSymptome } from '../../../fakeSymptome';
 import Symptomes from '../Symptome';
+import Doctors from './Doctors';
 
 
 export default function Home() {
@@ -59,7 +60,8 @@ export default function Home() {
       <Text style={dashboardStyele.doctorTitle}>Nos doctuers</Text>
       <Text>afficher tout </Text>
     </View>
-
+    
+    <Doctors/>
     </ScrollView>
   )
 }
