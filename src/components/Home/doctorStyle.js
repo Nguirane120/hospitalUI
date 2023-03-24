@@ -24,7 +24,7 @@ export const doctorStyele = StyleSheet.create({
         padding: 15
     },
     speciality:{
-        backgroundColor: 'blue',
+        backgroundColor: '#4000FF',
         color: 'white',
         padding: 5,
         borderRadius: 15,
