@@ -13,7 +13,9 @@ export default function Routes() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={BotomTabs} />
-        <Stack.Screen name="MessageDetail" component={DetailMessage} />
+        <Stack.Screen name="MessageDetail" component={DetailMessage}
+        options={{ headerShown: true }}
+         />
       </Stack.Navigator>
     </NavigationContainer>
   );

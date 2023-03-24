@@ -14,7 +14,7 @@ export default function MessageList({item, navigation}) {
 
   return (
     <TouchableOpacity style={ messageStyle.messageContainer}
-    onPress={() => navigation.navigate('MessageDetail')}
+    onPress={() => navigation.navigate('MessageDetail', item)}
     >
       <Image
        source={ require('../../assets/doctor.png')}

@@ -10,7 +10,7 @@ export default function Message({navigation}) {
     renderItem={({ item}) => {
         return <MessageList item={item} navigation={navigation}/>
     }}
-    alwaysBounceVertical={true}
+    showsVerticalScrollIndicator={false}
     style={{ paddingHorizontal: 10, paddingVertical: 70 }}
     />
   )
